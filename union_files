@@ -1,0 +1,24 @@
+import pandas as pd 
+import os
+import numpy as np
+
+source_path = os.path.abspath(f'') #caminho de origem
+destination_path = '' #caminho de destino
+
+arquivos = os.listdir(source_path)
+file1_agregar = pd.read_excel(destination_path)
+
+for arquivo in arquivos:
+    caminho_arquivo = os.path.join(source_path,arquivo)
+    csv = caminho_arquivo
+    file1 = pd.read_csv(csv, header=1, encoding='latin-1')
+    os.remove(csv)
+    file1 = file1.astype(str)
+    file1 = file1.applymap(lambda x: x.replace('.0',''))
+    file1 = file1.drop_duplicates(subset=['Nº Contrato','Telefone'], keep='last').reset_index(drop=True)
+    file1 = file1[file1['Telefone'] != '']
+    file1_agregar = pd.concat([file1_agregar,file1])
+    file1_agregar.replace(['nan','NaT',np.nan],'',inplace=True)
+    print(str(arquivo))
+
+file1_agregar.to_excel(destination_path)
