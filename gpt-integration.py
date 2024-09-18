@@ -1,7 +1,7 @@
 import openai
 import pandas as pd
 
-openai_api_key = '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'
+openai_api_key = '********'
 openai.api_key = openai_api_key
 msgs = []
 
