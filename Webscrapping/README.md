@@ -2,7 +2,7 @@
 
 <p>Esse código é responsável por extrair as informações de venda de imóveis do site <a href="https://www.vivareal.com.br" target="_blank">VivaReal</a>.</p>
 
-<p>Esse projeto não objetivo de venda, mas sim um estudo de bibliotecas de webscrapping e testes para treinamentos de IA.</p>
+<p>Esse projeto não tem objetivo de nenhuma venda, mas sim um estudo de bibliotecas de webscrapping e testes para treinamentos de IA.</p>
 
 <h3>Bibliotecas Utilizadas 📖</h3>
 <ul>
