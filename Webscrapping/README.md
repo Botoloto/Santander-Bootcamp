@@ -38,8 +38,8 @@
   <li>Também é necessário escolher quantas páginas devem ser extraídas, o site contém algumas limitações para grandes quantidade (valor recomendado 150 ~ 200)</li>
 </ol>
 
-<h3>Resultado 🥇</h3>
-<p>Será criado um arquivo CSV chamado <strong>vivarealdata.xlsx</strong> no mesmo diretório do arquivo contendo todos os dados dos imóveis</p>
+# Resultado 🥇
+Será criado um arquivo CSV chamado <strong>vivarealdata.xlsx</strong> no mesmo diretório do arquivo contendo todos os dados dos imóveis
 ![vivarealdata](https://github.com/user-attachments/assets/6597c2f5-5c9e-4468-834f-a2b765997223)
 
 
